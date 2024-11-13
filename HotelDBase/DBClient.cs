@@ -135,7 +135,7 @@ namespace HotelDBase
             List<Facility> facilities = new List<Facility>();
             while (reader.Read())
             {
-                //If we reached here, there is still one hotel to be put into the list 
+                //If we reached here, there is still one facility to be put into the list 
                 Facility nextFacility = new Facility()
                 {
                     Facility_ID = reader.GetInt32(0), //Reading int from 1st column

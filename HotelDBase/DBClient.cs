@@ -11,7 +11,7 @@ namespace HotelDBase
         
 
         //Database connection string - replace it with the connnection string to your own database 
-        string connectionString = "Data Source=(localdb)\\Berner;Initial Catalog=HotelDBase;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string connectionString = "";
 
         private int GetMaxFacility(SqlConnection connection)
         {

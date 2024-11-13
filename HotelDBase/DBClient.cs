@@ -153,7 +153,7 @@ namespace HotelDBase
             reader.Close();
             Console.WriteLine();
 
-            //Return list of hotels
+            //Return list of facilities
             return facilities;
         }
 
@@ -228,7 +228,7 @@ namespace HotelDBase
                 //Insert the facility into the database
                 InsertFacility(connection, newFacility);
 
-                //List all hotels including the the newly inserted one
+                //List all facilities including the the newly inserted one
                 ListAllFacilities(connection);
 
                 //Get the newly inserted facility from the database in order to update it 

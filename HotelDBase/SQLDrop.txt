@@ -1,0 +1,16 @@
+﻿USE [HotelDBase]
+GO
+
+/****** Object: Table [dbo].[Hotel] Script Date: 06-11-2024 12:46:34 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+DROP TABLE [dbo].[Guest];
+DROP TABLE [dbo].[Room];
+DROP TABLE [dbo].[Hotel];
+DROP TABLE [dbo].[Booking];
+DROP TABLE [dbo].[Facility];
+DROP TABLE [dbo].[HotelFacility];

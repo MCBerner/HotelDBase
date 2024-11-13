@@ -1,0 +1,53 @@
+﻿USE [HotelDBase]
+GO
+
+/****** Object: Table [dbo].[Hotel] Script Date: 06-11-2024 12:46:34 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE TABLE [dbo].[Hotel] (
+    [Hotel_No] INT          NOT NULL,
+    [Name]     VARCHAR (30) NOT NULL,
+    [Address]  VARCHAR (50) NOT NULL
+);
+
+CREATE TABLE [dbo].[Room] (
+    [Room_No]  INT        NOT NULL,
+    [Hotel_No] INT        NOT NULL,
+    [Types]    CHAR (1)   NULL,
+    [Price]    FLOAT (53) NULL
+
+);
+
+CREATE TABLE [dbo].[Guest] (
+    [Guest_No] INT          NOT NULL,
+    [Name]     VARCHAR (30) NOT NULL,
+    [Address]  VARCHAR (50) NOT NULL
+
+);
+
+CREATE TABLE [dbo].[Booking] (
+    [Booking_id] INT  IDENTITY (1, 1) NOT NULL,
+    [Hotel_No]   INT  NOT NULL,
+    [Guest_No]   INT  NOT NULL,
+    [Date_From]  DATE NOT NULL,
+    [Date_To]    DATE NOT NULL,
+    [Room_No]    INT  NOT NULL
+);
+
+
+CREATE TABLE [dbo].[Facility] (
+    [Facility_ID] INT          NOT NULL,
+    [Name]        VARCHAR (30) NOT NULL
+);
+
+
+CREATE TABLE [dbo].[HotelFacility] (
+    [ID]          INT NOT NULL,
+    [Hotel_ID]    INT NOT NULL,
+    [FACILITY_ID] INT NOT NULL
+);
